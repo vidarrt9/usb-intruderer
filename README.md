@@ -4,7 +4,7 @@ This will be where we collect all efforts to get into the SMEG+ via one of its U
 
 ## The idea from a bird's view
 
-While this will use some ideas from [psakey](https://github.com/Mwyann/psakey) and [smeg-plus\_key](https://github.com/bousqi/smeg-plus_key), the idea is more to use some more powerful hardware like a Beaglebone Black to pretend being all sorts of USB devices to the USB host (which in our case is the SMEG+). In particular we're hoping to play some switcheroo while pretending to be a mass storage device. But yes, in all likelihood USB CDC isn't going to be supported by the SMEG+, so we need to figure out what device classes we can pose as to the head unit.
+While this will use some ideas from [psakey](https://github.com/Mwyann/psakey) and [smeg-plus\_key](https://github.com/bousqi/smeg-plus_key), the idea is more to use some more powerful hardware like a Beaglebone Black to pretend being all sorts of USB devices to the USB host (which in our case is the SMEG+). In particular we're hoping to play some switcheroo while pretending to be a mass storage device. But ~~yes, in all likelihood USB CDC isn't going to be supported by the SMEG+, so~~ we need to figure out what device classes we can pose as to the head unit. @bousqui has done some prior work regarding this. At this point it seems like conclusions drawn from strings?!
 
 ## Reading material
 
