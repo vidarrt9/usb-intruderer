@@ -6,6 +6,15 @@ This will be where we collect all efforts to get into the SMEG+ via one of its U
 
 While this will use some ideas from [psakey](https://github.com/Mwyann/psakey) and [smeg-plus\_key](https://github.com/bousqi/smeg-plus_key), the idea is more to use some more powerful hardware like a Beaglebone Black to pretend being all sorts of USB devices to the USB host (which in our case is the SMEG+). In particular we're hoping to play some switcheroo while pretending to be a mass storage device. But ~~yes, in all likelihood USB CDC isn't going to be supported by the SMEG+, so~~ we need to figure out what device classes we can pose as to the head unit. @bousqui has done some prior work regarding this. At this point it seems like conclusions drawn from strings?!
 
+### Suitable devices
+
+* Generally every device with a UDC (USB device controller) should work - however, many of those aren't necessarily outfitted with much RAM (e.g. to pose as mass storage), computing power or even Linux (which allows for GadgetFS and FunctionFS)
+* Most promising candidates:
+    * Beaglebone Black
+    * USB Armory Mk II
+    * RaspberryPi 3 or 4
+* It could be possible to pose as a USB hub ([module `dummy_hcd`](https://www.collabora.com/news-and-blog/blog/2019/06/24/using-dummy-hcd/)) even if there is no UCD?!
+
 ## Reading material
 
 * [Pretty much a link dump about USB-related topics](https://www.devalias.net/devalias/2018/05/13/usb-reverse-engineering-down-the-rabbit-hole/)
