@@ -14,6 +14,7 @@ Either way [CDC\_EEM](https://www.usb.org/sites/default/files/CDC_EEM10.pdf) see
 * Most promising candidates:
     * Beaglebone Black
     * USB Armory Mk II
+    * GreatFET (especially during the prototyping phase)
     * RaspberryPi 3 or 4
 * It could be possible to pose as a USB hub ([module `dummy_hcd`](https://www.collabora.com/news-and-blog/blog/2019/06/24/using-dummy-hcd/)) even if there is no UCD?!
 
